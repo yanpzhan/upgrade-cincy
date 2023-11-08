@@ -5,16 +5,16 @@
       "payload": "registry.build05.ci.openshift.org/ci-ln-5321b9b/release@sha256:73775b90d4d238481fd1821a5cb3d241b5346d31373c57f77270c55a64ef8ee8"
     },
     {
-      "version": "4.13.0-0.nightly-2023-02-02-150419",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:ae86902653839e769594d289b30b45e4841f9adffed9ad879f5b523235f7e613"
+      "version": "4.14.0-0.nightly-2023-11-09-004058",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:ad0433f037fd6748a5160d114ec95cdd5f0ad36234d08649a06d63147034704c"
     },
     {
-      "version": "4.13.0-0.nightly-2023-02-03-024018",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:50ddf6032932748c7925eba195348d102ab8f932a8c8cd5696b406b320646cd5"
+      "version": "4.14.0-0.nightly-2023-11-09-092851",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:f466d25872c5728a8774ebc0557022e4410daf188b515dfcb304eed38267081b"
     },
     {
-      "version": "4.13.0-0.nightly-2023-02-02-032018",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:4157b05e2e377b96f8a84b6648fdc9ee4ab0fdbdc7fa87322da872b64ec1dc8b"
+      "version": "4.14.0-0.nightly-2023-11-09-204811",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:8533044dc17ef6ff4a1ddeb03fb814cf345e1f28560ecf0cdc427eea9644b2d4"
     }
   ],
   "edges": [
@@ -25,7 +25,7 @@
   "conditionalEdges":[
     {
       "edges": [
-        {"from": "4.13.0-0.ci.test-2023-11-10-023614-ci-ln-5321b9b-latest", "to": "4.13.0-0.nightly-2023-02-03-024018"}
+        {"from": "4.13.0-0.ci.test-2023-11-10-023614-ci-ln-5321b9b-latest", "to": "4.14.0-0.nightly-2023-11-09-004058"}
       ],
       "risks": [
         {
@@ -58,7 +58,7 @@
     },
     {
       "edges": [
-        {"from": "4.13.0-0.ci.test-2023-11-10-023614-ci-ln-5321b9b-latest", "to": "4.13.0-0.nightly-2023-02-02-150419"}
+        {"from": "4.13.0-0.ci.test-2023-11-10-023614-ci-ln-5321b9b-latest", "to": "4.14.0-0.nightly-2023-11-09-092851"}
       ],
       "risks": [
         {
@@ -71,11 +71,11 @@
             }
           ]
         }
-      ]
+      ] 
     },
     {
       "edges": [
-        {"from": "4.13.0-0.ci.test-2023-11-10-023614-ci-ln-5321b9b-latest", "to": "4.13.0-0.nightly-2023-02-02-032018"}
+        {"from": "4.13.0-0.ci.test-2023-11-10-023614-ci-ln-5321b9b-latest", "to": "4.14.0-0.nightly-2023-11-09-204811"}
       ],
       "risks": [
         {
