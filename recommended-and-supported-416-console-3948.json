@@ -5,27 +5,22 @@
       "payload": "registry.build05.ci.openshift.org/ci-ln-28x5rct/release@sha256:8b1db0f9e375b4c5ddc1debde1b57a64ad876b4cf811593a05dd5b6ad336b3fd"
     },
     {
-      "version": "4.14.0-0.nightly-2023-11-09-004058",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:ad0433f037fd6748a5160d114ec95cdd5f0ad36234d08649a06d63147034704c"
+      "version": "4.16.0-0.nightly-2024-01-06-161418",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:20339878be2776da1382b7a3c5789c8b6675fd94689d52d9217bf7f4f631d5a3"
     },
     {
-      "version": "4.14.0-0.nightly-2023-11-09-092851",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:f466d25872c5728a8774ebc0557022e4410daf188b515dfcb304eed38267081b"
-    },
-    {
-      "version": "4.14.0-0.nightly-2023-11-09-204811",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:8533044dc17ef6ff4a1ddeb03fb814cf345e1f28560ecf0cdc427eea9644b2d4"
+      "version": "4.16.0-0.nightly-2024-01-07-111145",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:c07d52b72aca79cdf60dcd049771a4a53402e6176444bef7b3c954272ffb8bc5"
     }
   ],
   "edges": [
     [0,1],
-    [0,2],
-    [0,3]
+    [0,2]
   ],
   "conditionalEdges":[
     {
       "edges": [
-        {"from": "4.15.0-0.ci.test-2024-02-26-072855-ci-ln-28x5rct-latest", "to": "4.14.0-0.nightly-2023-11-09-004058"}
+        {"from": "4.15.0-0.ci.test-2024-02-26-072855-ci-ln-28x5rct-latest", "to": "4.16.0-0.nightly-2024-01-06-161418"}
       ],
       "risks": [
         {
@@ -58,7 +53,7 @@
     },
     {
       "edges": [
-        {"from": "4.15.0-0.ci.test-2024-02-26-072855-ci-ln-28x5rct-latest", "to": "4.14.0-0.nightly-2023-11-09-092851"}
+        {"from": "4.15.0-0.ci.test-2024-02-26-072855-ci-ln-28x5rct-latest", "to": "4.16.0-0.nightly-2024-01-07-111145"}
       ],
       "risks": [
         {
@@ -72,26 +67,6 @@
           ]
         }
       ] 
-    },
-    {
-      "edges": [
-        {"from": "4.15.0-0.ci.test-2024-02-26-072855-ci-ln-28x5rct-latest", "to": "4.14.0-0.nightly-2023-11-09-204811"}
-      ],
-      "risks": [
-        {
-          "url": "https://bug.example.com/c",
-          "name": "SomeInfrastructureThing",
-          "message": "Clusters on nonexist provider, this imaginary bug can happen.",
-          "matchingRules": [
-            {
-              "type": "PromQL",
-              "promql": {
-                "promql": "cluster_infrastructure_provider{type=~\"nonexist\"}\nor\n0 * cluster_infrastructure_provider"
-              }
-            }
-          ]
-        }
-      ]
     }
   ]
 }
